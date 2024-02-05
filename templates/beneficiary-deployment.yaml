@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beneficiary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beneficiary
+  template:
+    metadata:
+      labels:
+        app: beneficiary
+    spec:
+      containers:
+        - name: beneficiary
+          image: {{ .Values.beneficiary.image.repository }}:{{ .Values.eurekaserver.image.tag }}
+          ports:
+            - containerPort: 8080

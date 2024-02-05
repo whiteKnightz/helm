@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: idm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: idm
+  template:
+    metadata:
+      labels:
+        app: idm
+    spec:
+      containers:
+        - name: idm
+          image: {{ .Values.idm.image.repository }}:{{ .Values.idm.image.tag }}
+          ports:
+            - containerPort: 8080
