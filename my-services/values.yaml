@@ -23,11 +23,11 @@ beneficiary:
   image:
     repository: whiteknightz/beneficiary
     tag: latest
-api-gateway:
+gateway:
   image:
     repository: whiteknightz/api-gateway
     tag: latest
-personal-website:
+website:
   image:
     repository: whiteknightz/my-personal-website
     tag: latest
