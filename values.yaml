@@ -1,0 +1,33 @@
+#Docker image repository and tag for each service
+payment:
+  image:
+    repository: whiteknightz/payment
+    tag: latest
+loan:
+  image:
+    repository: whiteknightz/loan-management
+    tag: latest
+idm:
+  image:
+    repository: whiteknightz/identity
+    tag: latest
+eurekaserver:
+  image:
+    repository: whiteknightz/eurekaserver
+    tag: latest
+account:
+  image:
+    repository: whiteknightz/account
+    tag: latest
+beneficiary:
+  image:
+    repository: whiteknightz/beneficiary
+    tag: latest
+api-gateway:
+  image:
+    repository: whiteknightz/api-gateway
+    tag: latest
+personal-website:
+  image:
+    repository: whiteknightz/my-personal-website
+    tag: latest
