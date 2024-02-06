@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: idm
+  name: payment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: idm
+      app: payment
   template:
     metadata:
       labels:
-        app: idm
+        app: payment
     spec:
       containers:
-        - name: idm
-          image: {{ .Values.idm.image.repository }}:{{ .Values.idm.image.tag }}
+        - name: payment
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           ports:
             - containerPort: 8080

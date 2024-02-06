@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: account
+  name: eurekaserver
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: account
+      app: eurekaserver
   template:
     metadata:
       labels:
-        app: account
+        app: eurekaserver
     spec:
       containers:
-        - name: account
-          image: {{ .Values.account.image.repository }}:{{ .Values.account.image.tag }}
+        - name: eurekaserver
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           ports:
             - containerPort: 8080
