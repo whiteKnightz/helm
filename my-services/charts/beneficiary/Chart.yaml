@@ -1,0 +1,5 @@
+apiVersion: v1
+appVersion: "1.0"
+description: A Helm chart for beneficiary on Kubernetes
+name: beneficiary
+version: 0.1.0
