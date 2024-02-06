@@ -1,0 +1,27 @@
+dependencies:
+- name: account
+  repository: file://./charts/account
+  version: 0.1.0
+- name: gateway
+  repository: file://./charts/gateway
+  version: 0.1.0
+- name: beneficiary
+  repository: file://./charts/beneficiary
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://./charts/eurekaserver
+  version: 0.1.0
+- name: idm
+  repository: file://./charts/idm
+  version: 0.1.0
+- name: loan-management
+  repository: file://./charts/loan
+  version: 0.1.0
+- name: website
+  repository: file://./charts/my-personal-website
+  version: 0.1.0
+- name: payment
+  repository: file://./charts/payment
+  version: 0.1.0
+digest: sha256:49258b48b19ed4e9fb45c2d28905ee302d7bb8727e08c4f11b308fadb65a7485
+generated: "2024-02-05T21:14:14.103957967-05:00"
